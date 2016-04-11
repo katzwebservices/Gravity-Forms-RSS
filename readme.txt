@@ -56,10 +56,11 @@ This plugin is released under a GPL license.
 
 == Changelog ==
 
-= 1.1.2 =
+= 1.1.2 & 1.1.3 =
 
 * Works with Gravity Forms 2.0.x
 * Works with WordPress 4.5
+* Added translation files
 
 = 1.1 =
 * Updated to work with Gravity Forms 1.7+

@@ -4,8 +4,10 @@ Plugin Name: Gravity Forms RSS Add-On
 Plugin URI: https://katz.co/plugins/gravity-forms-rss/
 Description: Display your form entries as an RSS feed.
 Author: Katz Web Services, Inc.
-Version: 1.1.2
+Version: 1.1.3
 Author URI: http://www.katzwebservices.com
+Text Domain: gravity-forms-rss
+Domain Path: languages
 
 Copyright 2016 Katz Web Services, Inc.  (email: info@katzwebservices.com)
 
@@ -47,7 +49,7 @@ class KWSGFRSS {
 	        add_filter( 'gform_form_settings', array('KWSGFRSS', 'filter_form_settings'), 10, 2);
 	        add_filter('gform_tooltips', array('KWSGFRSS', 'add_form_option_tooltip'));
 
-			load_plugin_textdomain('gravity-forms-subscriptions', FALSE, '/gravity-forms-rss/languages' );
+			load_plugin_textdomain('gravity-forms-rss', FALSE, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 		}
 
 		public static function plugin_row(){
